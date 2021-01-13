@@ -1,16 +1,33 @@
-# cupping_app
+# GoodCoffee ver iOS or Android
 
-A new Flutter application.
+## アプリ概要
 
-## Getting Started
+コーヒーのカッピングのために、紙とペンを用意する必要はもうありません。
+外出先のカフェでも、カッピングイベントに参加した時でも、
+スマートフォンさえあれば今すぐカッピングをすることができます。
+カッピングしたコーヒーの情報は保存され、いつでも見返すことができます。
+過去のカッピング履歴や採点結果によってあなたの好みの傾向を客観的に見つけ出します。（未実装）
+また、当アプリを利用いただいているカフェにてQRコードを読み取ることで、
+カフェのバリスタにコーヒーの好みを一瞬で伝えることができます。（未実装）
 
-This project is a starting point for a Flutter application.
+## コア機能
 
-A few resources to get you started if this is your first Flutter project:
+### コーヒーカッピング機能
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+CupOfExcellenceのカッピングシートに基づいた評価項目でコーヒーを評価できます。
+（クリーンカップ、甘さ、酸味、舌触り、フレーバー、後味、バランス、オーバーオール）
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+または、もっとラフな感じにしても良いかも？
+フレーバーメインで、あとはメモ書き程度にする→あくまでターゲットは一般人
+好きな度合いを5段階評価とかで気軽に評価できるようにすると尚良いかも
+
+### ユーザー登録機能
+
+アプリをインストールして普通に使う分にはユーザー登録は不要（匿名ユーザーとして判別）
+カフェでQRコードを読み取ったりするためにはユーザー登録が必要、とかにする予定
+
+## アーキテクチャ
+
+## 使用技術
+
+Flutter, Firebase (Firebase Authenticate, Cloud Firestore)
